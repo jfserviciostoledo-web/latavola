@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto y Reservas - La Tavola Mediterránea</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto y Reservas</h1>
+    </header>
 
+    <nav>
+        <a href="index.html">Inicio</a> | 
+        <a href="carta.html">La Carta</a> | 
+        <a href="galeria.html">Galería</a> | 
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>¿Dónde estamos?</h2>
+            <p>📍 Calle de la Tradición, 15 - CP 28001, Ciudad Blanca</p>
+            <p>📞 <strong>Teléfono de reservas:</strong> +34 912 345 678</p>
+            <p>📧 <strong>Email:</strong> info@latavolamediterranea.com</p>
+        </section>
+
+        <section>
+            <h2>Horario de Apertura</h2>
+            <table border="0" style="width:100%; max-width:400px;">
+                <tr>
+                    <td><strong>Lunes:</strong></td>
+                    <td>Cerrado por descanso</td>
+                </tr>
+                <tr>
+                    <td><strong>Martes - Jueves:</strong></td>
+                    <td>13:00 - 16:30 | 20:00 - 23:30</td>
+                </tr>
+                <tr>
+                    <td><strong>Viernes - Domingo:</strong></td>
+                    <td>13:00 - 00:00 (Cocina ininterrumpida)</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Solicitud de Reserva</h2>
+            <p><i>Para reservas de más de 8 personas, por favor contacte directamente por teléfono.</i></p>
+            <form>
+                <p>Nombre: <br><input type="text" name="nombre" placeholder="Tu nombre..."></p>
+                <p>Fecha: <br><input type="date" name="fecha"></p>
+                <p>Comensales: <br>
+                    <select name="personas">
+                        <option>1-2 personas</option>
+                        <option>3-4 personas</option>
+                        <option>5-8 personas</option>
+                    </select>
+                </p>
+                <button type="button">Consultar Disponibilidad</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 La Tavola Mediterránea - Proyecto Hugo</p>
+    </footer>
+</body>
+</html>
