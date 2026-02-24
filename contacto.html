@@ -2,12 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Contacto y Reservas - La Tavola Mediterránea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Reservas | La Tavola Mediterránea</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
-        <h1>Contacto y Reservas</h1>
+        <h1>La Tavola Mediterránea</h1>
+        <p style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.8em;">Reservas y Atención al Cliente</p>
     </header>
 
     <nav>
@@ -18,51 +20,62 @@
     </nav>
 
     <main>
-        <section>
-            <h2>¿Dónde estamos?</h2>
-            <p>📍 Calle de la Tradición, 15 - CP 28001, Ciudad Blanca</p>
-            <p>📞 <strong>Teléfono de reservas:</strong> +34 912 345 678</p>
-            <p>📧 <strong>Email:</strong> info@latavolamediterranea.com</p>
-        </section>
+        <article style="max-width: 800px; margin: 0 auto; padding: 20px;">
+            <section style="text-align: center; margin-bottom: 40px;">
+                <h2>Contacte con Nosotros</h2>
+                <p>Para consultas generales o eventos especiales, estamos a su entera disposición a través de los siguientes canales:</p>
+                <div style="margin-top: 20px;">
+                    <p><strong>📞 Teléfono:</strong> +34 912 345 678</p>
+                    <p><strong>📧 Email:</strong> reservas@latavolamediterranea.com</p>
+                </div>
+            </section>
 
-        <section>
-            <h2>Horario de Apertura</h2>
-            <table border="0" style="width:100%; max-width:400px;">
-                <tr>
-                    <td><strong>Lunes:</strong></td>
-                    <td>Cerrado por descanso</td>
-                </tr>
-                <tr>
-                    <td><strong>Martes - Jueves:</strong></td>
-                    <td>13:00 - 16:30 | 20:00 - 23:30</td>
-                </tr>
-                <tr>
-                    <td><strong>Viernes - Domingo:</strong></td>
-                    <td>13:00 - 00:00 (Cocina ininterrumpida)</td>
-                </tr>
-            </table>
-        </section>
+            <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
+                <section style="flex: 1; min-width: 300px;">
+                    <h3>Horario de Apertura</h3>
+                    <hr style="border: 0; border-top: 1px solid #8b4513; margin-bottom: 15px;">
+                    <ul style="list-style: none; padding: 0; line-height: 2;">
+                        <li><strong>Lunes:</strong> <span style="color: #888;">Cerrado por descanso</span></li>
+                        <li><strong>Martes - Jueves:</strong> 13:30 a 16:30 | 20:30 a 23:30</li>
+                        <li><strong>Viernes - Sábado:</strong> 13:30 a 00:00</li>
+                        <li><strong>Domingo:</strong> 13:30 a 17:00</li>
+                    </ul>
+                </section>
 
-        <section>
-            <h2>Solicitud de Reserva</h2>
-            <p><i>Para reservas de más de 8 personas, por favor contacte directamente por teléfono.</i></p>
-            <form>
-                <p>Nombre: <br><input type="text" name="nombre" placeholder="Tu nombre..."></p>
-                <p>Fecha: <br><input type="date" name="fecha"></p>
-                <p>Comensales: <br>
-                    <select name="personas">
-                        <option>1-2 personas</option>
-                        <option>3-4 personas</option>
-                        <option>5-8 personas</option>
-                    </select>
-                </p>
-                <button type="button">Consultar Disponibilidad</button>
-            </form>
-        </section>
+                <section style="flex: 1; min-width: 300px; background-color: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
+                    <h3>Solicitud de Reserva</h3>
+                    <form>
+                        <div style="margin-bottom: 15px;">
+                            <label style="display: block; margin-bottom: 5px;">Nombre Completo</label>
+                            <input type="text" name="nombre" placeholder="Ej: Hugo García" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <label style="display: block; margin-bottom: 5px;">Fecha</label>
+                            <input type="date" name="fecha" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+
+                        <div style="margin-bottom: 15px;">
+                            <label style="display: block; margin-bottom: 5px;">Comensales</label>
+                            <select name="comensales" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                                <option>1 - 2 personas</option>
+                                <option>3 - 4 personas</option>
+                                <option>5 - 6 personas</option>
+                                <option>Grupos (+6)</option>
+                            </select>
+                        </div>
+
+                        <button type="button" style="width: 100%; background-color: #556b2f; color: white; padding: 10px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">
+                            Confirmar Disponibilidad
+                        </button>
+                    </form>
+                </section>
+            </div>
+        </article>
     </main>
 
-    <footer>
-        <p>&copy; 2026 La Tavola Mediterránea - Proyecto Hugo</p>
+    <footer style="margin-top: 50px; text-align: center; border-top: 1px solid #eee; padding: 20px;">
+        <p>&copy; 2024 La Tavola Mediterránea - Proyecto Hugo</p>
     </footer>
 </body>
 </html>
