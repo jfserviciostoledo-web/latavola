@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería - La Tavola Mediterránea</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .contenedor-fotos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .foto-placeholder {
+            width: 250px;
+            height: 180px;
+            background-color: #eaddca;
+            border: 1px dashed #8b4513;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #8b4513;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nuestra Galería</h1>
+    </header>
 
+    <nav>
+        <a href="index.html">Inicio</a> | 
+        <a href="carta.html">La Carta</a> | 
+        <a href="galeria.html">Galería</a> | 
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Nuestras Instalaciones y Platos</h2>
+            <p>Estamos preparando una selección de fotografías para que pueda conocer nuestro acogedor local y la presentación de nuestras especialidades mediterráneas.</p>
+            
+            <div class="contenedor-fotos">
+                <div class="foto-placeholder">Imagen de nuestro salón</div>
+                <div class="foto-placeholder">Nuestra especialidad: Arroces</div>
+                <div class="foto-placeholder">Terraza exterior</div>
+                <div class="foto-placeholder">Carnes a la brasa</div>
+                <div class="foto-placeholder">Ambiente familiar</div>
+                <div class="foto-placeholder">Postres artesanos</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 La Tavola Mediterránea - Proyecto Hugo</p>
+    </footer>
+</body>
+</html>
