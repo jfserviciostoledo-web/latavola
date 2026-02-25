@@ -2,60 +2,65 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Galería - La Tavola Mediterránea</title>
-   <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Carta | La Tavola Mediterránea</title>
+    <link rel="stylesheet" href="css/estilos.css">
     <style>
-        .contenedor-fotos {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .foto-placeholder {
-            width: 250px;
-            height: 180px;
-            background-color: #eaddca;
-            border: 1px dashed #8b4513;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #8b4513;
-            font-style: italic;
-        }
+        .alergeno { font-size: 0.8em; color: #8b4513; font-weight: bold; background: #eee; padding: 2px 5px; border-radius: 4px; margin-left: 5px; }
+        .precio { float: right; font-weight: bold; color: #556b2f; }
+        .plato { margin-bottom: 15px; border-bottom: 1px dashed #ccc; padding-bottom: 5px; list-style: none; }
     </style>
 </head>
 <body>
     <header>
-        <h1>Nuestra Galería</h1>
+        <h1>Nuestra Carta</h1>
     </header>
 
     <nav>
-        <a href="index.html">Inicio</a> | 
-        <a href="carta.html">La Carta</a> | 
-        <a href="galeria.html">Galería</a> | 
-        <a href="contacto.html">Contacto</a>
+        <a href="index.html">Inicio</a> | <a href="carta.html">La Carta</a> | <a href="galeria.html">Galería</a> | <a href="contacto.html">Contacto</a>
     </nav>
 
     <main>
-        <section>
-            <h2>Nuestras Instalaciones y Platos</h2>
-            <p>Estamos preparando una selección de fotografías para que pueda conocer nuestro acogedor local y la presentación de nuestras especialidades mediterráneas.</p>
-            
-            <div class="contenedor-fotos">
-                <div class="foto-placeholder">Imagen de nuestro salón</div>
-                <div class="foto-placeholder">Nuestra especialidad: Arroces</div>
-                <div class="foto-placeholder">Terraza exterior</div>
-                <div class="foto-placeholder">Carnes a la brasa</div>
-                <div class="foto-placeholder">Ambiente familiar</div>
-                <div class="foto-placeholder">Postres artesanos</div>
-            </div>
-        </section>
+        <article>
+            <section>
+                <h2>Entrantes e Insalate</h2>
+                <ul>
+                    <li class="plato">Insalata Caprese <span class="alergeno">Lácteos</span></li>
+                    <li class="plato">Insalata Mista <span class="alergeno">Sulfitos</span></li>
+                    <li class="plato">Bruschette al Pomodoro <span class="alergeno">Gluten</span></li>
+                    <li class="plato">Crocchette di Formaggio <span class="alergeno">Gluten, Lácteos, Huevo</span></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>I Nostri Risotti</h2>
+                <ul>
+                    <li class="plato">Risotto ai Funghi <span class="alergeno">Lácteos</span></li>
+                    <li class="plato">Risotto al Parmigiano <span class="alergeno">Lácteos</span></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Carni e Pesci</h2>
+                <ul>
+                    <li class="plato">Costine di Maiale (Costillas) <span class="alergeno">S/A</span></li>
+                    <li class="plato">Salmone alla Griglia <span class="alergeno">Pescado</span></li>
+                    <li class="plato">Orata al Forno (Dorada) <span class="alergeno">Pescado</span></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Dolci (Postres)</h2>
+                <ul>
+                    <li class="plato">Tiramisù della Casa <span class="alergeno">Gluten, Lácteos, Huevo</span></li>
+                    <li class="plato">Panna Cotta <span class="alergeno">Lácteos</span></li>
+                </ul>
+            </section>
+        </article>
     </main>
 
     <footer>
-        <p>&copy; 2026 La Tavola Mediterránea - Proyecto Hugo</p>
+        <p>&copy; 2024 La Tavola Mediterránea - Proyecto Hugo</p>
     </footer>
 </body>
 </html>
